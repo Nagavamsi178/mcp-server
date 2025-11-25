@@ -52,7 +52,7 @@ async def root():
 @app.get("/tools")
 async def list_tools() -> List[ToolDefinition]:
     """List all available calculator tools"""
-    return [
+    return [  
         ToolDefinition(
             name="add",
             description="Add two numbers together",
